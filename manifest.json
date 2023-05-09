@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "Cat Blender Blocker",
+  "version": "1.2",
+  "description": "Blocks sites containing 'cat' and 'blender' in the URL made by HttpAnimations",
+  "content_scripts": [
+    {
+      "matches": ["*://*/*cat*blender*"],
+      "js": ["block.js"]
+    }
+  ]
+}
